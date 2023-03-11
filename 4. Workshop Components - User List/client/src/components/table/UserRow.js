@@ -1,4 +1,4 @@
-import dateFormatter from '../utils/dateFormatter'
+import dateFormatter from '../../utils/dateFormatter'
 
 const UserRow = ({
     _id,

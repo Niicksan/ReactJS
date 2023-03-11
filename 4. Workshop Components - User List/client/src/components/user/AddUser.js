@@ -1,5 +1,6 @@
 const AddUser = ({
-    onClose
+    onClose,
+    onUserCreateSubmit,
 }) => {
     return (
         <div className="overlay">
@@ -17,7 +18,7 @@ const AddUser = ({
                             </svg>
                         </button>
                     </header>
-                    <form>
+                    <form onSubmit={(e) => onUserCreateSubmit(e)}>
                         <div className="form-row">
                             <div className="form-group">
                                 <label htmlFor="firstName">First name</label>

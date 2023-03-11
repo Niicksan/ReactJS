@@ -6,7 +6,8 @@ const EditUser = ({
     imageUrl,
     phoneNumber,
     address,
-    onClose
+    onClose,
+    onUserUpdateSubmit
 }) => {
     return (
         <div className="overlay">
@@ -24,7 +25,7 @@ const EditUser = ({
                             </svg>
                         </button>
                     </header>
-                    <form>
+                    <form onSubmit={(e) => onUserUpdateSubmit(e, _id)}>
                         <div className="form-row">
                             <div className="form-group">
                                 <label htmlFor="firstName">First name</label>
