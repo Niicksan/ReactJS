@@ -30,8 +30,6 @@ export const GameDetails = ({ setGames }) => {
         })
     }, [gameId]);
 
-    console.log(game.comments)
-    console.log(game.comments?.length)
     const isOwner = game._ownerId === userId;
     const hasComments = game.comments?.length !== 0 ? true : false;
 
