@@ -28,7 +28,7 @@ export const GameDetails = ({ setGames }) => {
 
             dispatch({ type: 'GAME_FETCH', payload: gameState })
         })
-    }, [gameId]);
+    }, [gameId, gameService]);
 
     const isOwner = game._ownerId === userId;
     const hasComments = game.comments?.length !== 0 ? true : false;
